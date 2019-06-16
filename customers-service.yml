@@ -2,8 +2,9 @@
   profiles: default
 eureka:
   instance:
+    hostname: ${HOST_NAME}
     # enable to register multiple app instances with a random server port
-    instance-id: ${spring.application.name}:${random.uuid}
+#    instance-id: ${spring.application.name}:${random.uuid}
 
 ---
 spring:
